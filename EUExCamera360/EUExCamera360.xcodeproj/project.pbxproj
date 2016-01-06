@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4294AEAF1C3B6E5500A1A82F /* EUExCamera360.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4294AEAE1C3B6E5500A1A82F /* EUExCamera360.mm */; };
+		4294AEB61C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEB21C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework */; };
+		4294AEB71C3B6EA800A1A82F /* pg_edit_sdk_common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEB31C3B6EA800A1A82F /* pg_edit_sdk_common.framework */; };
+		4294AEB81C3B6EA800A1A82F /* PhotoEditFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEB51C3B6EA800A1A82F /* PhotoEditFramework.framework */; };
+		4294AEBB1C3B722C00A1A82F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEBA1C3B722C00A1A82F /* CoreMotion.framework */; };
+		4294AEBD1C3B723600A1A82F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEBC1C3B723600A1A82F /* CoreData.framework */; };
+		4294AEBF1C3B723F00A1A82F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEBE1C3B723F00A1A82F /* CoreGraphics.framework */; };
+		4294AEC11C3B72E400A1A82F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEC01C3B72E400A1A82F /* CoreMedia.framework */; };
+		4294AEC31C3B72EF00A1A82F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEC21C3B72EF00A1A82F /* AVFoundation.framework */; };
+		4294AED71C3BD2B100A1A82F /* uexCamera360EditViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4294AED61C3BD2B100A1A82F /* uexCamera360EditViewController.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		424AD04B1C25285300EEC1F8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37570E9E37255C9F50CDF1F1 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		424AD04D1C25285300EEC1F8 /* libuexCamera360.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexCamera360.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4294AEAD1C3B6E5500A1A82F /* EUExCamera360.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExCamera360.h; sourceTree = "<group>"; };
+		4294AEAE1C3B6E5500A1A82F /* EUExCamera360.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EUExCamera360.mm; sourceTree = "<group>"; };
+		4294AEB21C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pg_edit_sdk_cdb_piratesdk.framework; sourceTree = "<group>"; };
+		4294AEB31C3B6EA800A1A82F /* pg_edit_sdk_common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pg_edit_sdk_common.framework; sourceTree = "<group>"; };
+		4294AEB41C3B6EA800A1A82F /* pg_edit_sdk_resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pg_edit_sdk_resource.bundle; sourceTree = "<group>"; };
+		4294AEB51C3B6EA800A1A82F /* PhotoEditFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhotoEditFramework.framework; sourceTree = "<group>"; };
+		4294AEBA1C3B722C00A1A82F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4294AEBC1C3B723600A1A82F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4294AEBE1C3B723F00A1A82F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4294AEC01C3B72E400A1A82F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		4294AEC21C3B72EF00A1A82F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4294AED51C3BD2B100A1A82F /* uexCamera360EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uexCamera360EditViewController.h; sourceTree = "<group>"; };
+		4294AED61C3BD2B100A1A82F /* uexCamera360EditViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = uexCamera360EditViewController.mm; sourceTree = "<group>"; };
+		5F473AAF2A4BA777801302E1 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		8EA5F41F167260BE6B04CC42 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		900275D98D477EBF5E91C5E0 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		910608908C3F50FA96558FA1 /* MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Digest.h; sourceTree = "<group>"; };
+		C7F2E5F2FE44C99E796A9173 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		C8B2F531D838BA7CC69E70C1 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
+		CB0C16E6B18D414F54BA82C8 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		CCF621E8D496EB7C6500A965 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
+		D03FB17337C185E31D444A18 /* EUExBase+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EUExBase+Bundle.h"; sourceTree = "<group>"; };
+		E3F4EB63377320D3B4DBEFDA /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		F1223BA21FCAE4D4DD4D854A /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
+		FEBA2E31FB1D78DE1FB3FBA7 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424AD04A1C25285300EEC1F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4294AEC31C3B72EF00A1A82F /* AVFoundation.framework in Frameworks */,
+				4294AEC11C3B72E400A1A82F /* CoreMedia.framework in Frameworks */,
+				4294AEBF1C3B723F00A1A82F /* CoreGraphics.framework in Frameworks */,
+				4294AEBD1C3B723600A1A82F /* CoreData.framework in Frameworks */,
+				4294AEBB1C3B722C00A1A82F /* CoreMotion.framework in Frameworks */,
+				4294AEB61C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework in Frameworks */,
+				4294AEB71C3B6EA800A1A82F /* pg_edit_sdk_common.framework in Frameworks */,
+				4294AEB81C3B6EA800A1A82F /* PhotoEditFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		424AD0441C25285300EEC1F8 = {
+			isa = PBXGroup;
+			children = (
+				BCE7A544563FAA122103A9CD /* EUExCamera360 */,
+				4294AEB91C3B721300A1A82F /* Frameworks */,
+				424AD04E1C25285300EEC1F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		424AD04E1C25285300EEC1F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				424AD04D1C25285300EEC1F8 /* libuexCamera360.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4294AEB11C3B6E9B00A1A82F /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				4294AEB21C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework */,
+				4294AEB31C3B6EA800A1A82F /* pg_edit_sdk_common.framework */,
+				4294AEB41C3B6EA800A1A82F /* pg_edit_sdk_resource.bundle */,
+				4294AEB51C3B6EA800A1A82F /* PhotoEditFramework.framework */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		4294AEB91C3B721300A1A82F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4294AEC21C3B72EF00A1A82F /* AVFoundation.framework */,
+				4294AEC01C3B72E400A1A82F /* CoreMedia.framework */,
+				4294AEBE1C3B723F00A1A82F /* CoreGraphics.framework */,
+				4294AEBC1C3B723600A1A82F /* CoreData.framework */,
+				4294AEBA1C3B722C00A1A82F /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCE7A544563FAA122103A9CD /* EUExCamera360 */ = {
+			isa = PBXGroup;
+			children = (
+				D0E48DD986BD51E8BF9EAB93 /* engineHeader */,
+				FC399D5D8FECA120B3FAD7F0 /* sourceCode */,
+				4294AEAD1C3B6E5500A1A82F /* EUExCamera360.h */,
+				4294AEAE1C3B6E5500A1A82F /* EUExCamera360.mm */,
+			);
+			path = EUExCamera360;
+			sourceTree = "<group>";
+		};
+		D0E48DD986BD51E8BF9EAB93 /* engineHeader */ = {
+			isa = PBXGroup;
+			children = (
+				E3F4EB63377320D3B4DBEFDA /* EUtility.h */,
+				D03FB17337C185E31D444A18 /* EUExBase+Bundle.h */,
+				C8B2F531D838BA7CC69E70C1 /* EUExBase.h */,
+				F1223BA21FCAE4D4DD4D854A /* EUExBaseDefine.h */,
+			);
+			path = engineHeader;
+			sourceTree = "<group>";
+		};
+		E0681A5657A2CF98B0A6EB60 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				900275D98D477EBF5E91C5E0 /* JSON.h */,
+				CCF621E8D496EB7C6500A965 /* JSONParser.h */,
+				910608908C3F50FA96558FA1 /* MD5Digest.h */,
+				C7F2E5F2FE44C99E796A9173 /* NSObject+SBJSON.h */,
+				5F473AAF2A4BA777801302E1 /* NSString+SBJSON.h */,
+				37570E9E37255C9F50CDF1F1 /* SBJSON.h */,
+				FEBA2E31FB1D78DE1FB3FBA7 /* SBJsonBase.h */,
+				8EA5F41F167260BE6B04CC42 /* SBJsonParser.h */,
+				CB0C16E6B18D414F54BA82C8 /* SBJsonWriter.h */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		FC399D5D8FECA120B3FAD7F0 /* sourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				4294AEB11C3B6E9B00A1A82F /* libs */,
+				E0681A5657A2CF98B0A6EB60 /* JSON */,
+				4294AED51C3BD2B100A1A82F /* uexCamera360EditViewController.h */,
+				4294AED61C3BD2B100A1A82F /* uexCamera360EditViewController.mm */,
+			);
+			path = sourceCode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		424AD04C1C25285300EEC1F8 /* EUExCamera360 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 424AD0561C25285300EEC1F8 /* Build configuration list for PBXNativeTarget "EUExCamera360" */;
+			buildPhases = (
+				424AD0491C25285300EEC1F8 /* Sources */,
+				424AD04A1C25285300EEC1F8 /* Frameworks */,
+				424AD04B1C25285300EEC1F8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EUExCamera360;
+			productName = EUExCamera360;
+			productReference = 424AD04D1C25285300EEC1F8 /* libuexCamera360.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		424AD0451C25285300EEC1F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = AppCan;
+				TargetAttributes = {
+					424AD04C1C25285300EEC1F8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 424AD0481C25285300EEC1F8 /* Build configuration list for PBXProject "EUExCamera360" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 424AD0441C25285300EEC1F8;
+			productRefGroup = 424AD04E1C25285300EEC1F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				424AD04C1C25285300EEC1F8 /* EUExCamera360 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		424AD0491C25285300EEC1F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4294AED71C3BD2B100A1A82F /* uexCamera360EditViewController.mm in Sources */,
+				4294AEAF1C3B6E5500A1A82F /* EUExCamera360.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		424AD0541C25285300EEC1F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		424AD0551C25285300EEC1F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		424AD0571C25285300EEC1F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexCamera360";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExCamera360/sourceCode",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = uexCamera360;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		424AD0581C25285300EEC1F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/uexCamera360";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EUExCamera360/sourceCode",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = uexCamera360;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		424AD0481C25285300EEC1F8 /* Build configuration list for PBXProject "EUExCamera360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424AD0541C25285300EEC1F8 /* Debug */,
+				424AD0551C25285300EEC1F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		424AD0561C25285300EEC1F8 /* Build configuration list for PBXNativeTarget "EUExCamera360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				424AD0571C25285300EEC1F8 /* Debug */,
+				424AD0581C25285300EEC1F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 424AD0451C25285300EEC1F8 /* Project object */;
+}

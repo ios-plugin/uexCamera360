@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin name="uexCamera360">
+    	<method name="edit"></method>
+    	<method name="setAPIKey"></method>
+    </plugin>
+</uexplugins>
