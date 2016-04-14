@@ -122,7 +122,7 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
     self.identifier=identifier;
     self.saveFolderPath=[self absPath:savePath];
     NSString *imgSrcPath=info[@"imgSrcPath"] && [info[@"imgSrcPath"] isKindOfClass:[NSString class]]?info[@"imgSrcPath"]:nil;
-    if (!imgSrcPath) {
+    if (!imgSrcPath || [imgSrcPath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length == 0) {
         //从相册选取图片
         [self launchImagePickerController];
         return;
