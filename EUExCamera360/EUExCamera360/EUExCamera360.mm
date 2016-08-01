@@ -22,8 +22,6 @@
  */
 
 #import "EUExCamera360.h"
-#import "EUtility.h"
-#import "JSON.h"
 #import "uexCamera360EditViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <UIKit/UIKit.h>
@@ -40,6 +38,7 @@
 @property (nonatomic,assign)BOOL usePNG;
 
 @property (nonatomic,assign)BOOL isStatusBarHidden;
+@property (nonatomic,strong)ACJSFunctionRef *cb;
 
 @end
 
@@ -59,8 +58,9 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
 
 #pragma mark - Life Cycle
 
-- (instancetype)initWithBrwView:(EBrowserView *)eInBrwView{
-    self=[super initWithBrwView:eInBrwView];
+- (instancetype)initWithWebViewEngine:(id<AppCanWebViewEngineObject>)engine
+{
+    self = [super initWithWebViewEngine:engine];
     if(self){
 
     }
@@ -91,7 +91,7 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
     if([inArguments count] < 1){
         return;
     }
-    id info = [inArguments[0] JSONValue];
+    ACArgsUnpack(NSDictionary *info) = inArguments;
     if(!info || ![info isKindOfClass:[NSDictionary class]]){
         return;
     }
@@ -103,21 +103,20 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
 }
 
 
-- (void)edit:(NSMutableArray *)inArguments{
+- (NSString *)edit:(NSMutableArray *)inArguments{
     if([inArguments count] < 1 || self.isPresenting){
-        return;
+        return nil;
     }
-    id info = [inArguments[0] JSONValue];
+    ACArgsUnpack(NSDictionary *info,ACJSFunctionRef *cb) = inArguments;
+    self.cb=cb;
     if(!info || ![info isKindOfClass:[NSDictionary class]]){
-        return;
+        return nil;
     }
-    NSString *identifier = info[@"id"]?[NSString stringWithFormat:@"%@",info[@"id"]]:nil;
-    if(!identifier){
-        return;
-    }
+    NSString *identifier = info[@"id"]?[NSString stringWithFormat:@"%@",info[@"id"]]:[NSString stringWithFormat:@"%d",arc4random()%10000];
+
     NSString *savePath= info[@"imgSavePath"] && [info[@"imgSavePath"] isKindOfClass:[NSString class]]?info[@"imgSavePath"]:nil;
     if(!savePath){
-        return;
+        return nil;
     }
     self.identifier=identifier;
     self.saveFolderPath=[self absPath:savePath];
@@ -125,22 +124,23 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
     if (!imgSrcPath || [imgSrcPath stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length == 0) {
         //从相册选取图片
         [self launchImagePickerController];
-        return;
     }
-    UIImage *sourceImage = [UIImage imageWithContentsOfFile:[self absPath:imgSrcPath]];
-    if(!sourceImage){
-        [self cbEditWithResult:uexCamera360CallbackErrorSourceImagePathError];
-        return;
+    else{
+        UIImage *sourceImage = [UIImage imageWithContentsOfFile:[self absPath:imgSrcPath]];
+        if(!sourceImage){
+            [self cbEditWithResult:uexCamera360CallbackErrorSourceImagePathError];
+            return nil;
+        }
+        
+        //检查是否是png
+        NSString *ext = imgSrcPath.lastPathComponent.pathExtension.lowercaseString;
+        if ([ext isEqual:@"png"]) {
+            self.usePNG=YES;
+        }
+        [self launchCamera360ViewControllerWithImage:sourceImage];
+        
     }
-    
-    //检查是否是png
-    NSString *ext = imgSrcPath.lastPathComponent.pathExtension.lowercaseString;
-    if ([ext isEqual:@"png"]) {
-        self.usePNG=YES;
-    }
-    [self launchCamera360ViewControllerWithImage:sourceImage];
-    
-    
+    return identifier;
 }
 
 #pragma mark - Private
@@ -152,7 +152,9 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
     if (self.fullSavePath) {
         [dict setValue:self.fullSavePath forKey:@"saveFilePath"];
     }
-    [self callbackJSONWithFunction:@"cbEdit" object:dict];
+    //[self callbackJSONWithFunction:@"cbEdit" object:dict];
+    [self.webViewEngine callbackWithFunctionKeyPath:@"uexCamera360.cbEdit" arguments:ACArgsPack([dict ac_JSONFragment])];
+    [self.cb executeWithArguments:ACArgsPack(dict)];
     [self clean];
 }
 
@@ -179,7 +181,9 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
 
 - (void)presentModelViewController:(__kindof UIViewController *)vc{
     dispatch_async(dispatch_get_main_queue(), ^{
-        [EUtility brwView:self.meBrwView presentModalViewController:vc animated:YES];
+        [[self.webViewEngine viewController] presentViewController:vc animated:YES completion:^{
+            
+        }];
     });
 }
 
@@ -225,6 +229,7 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
     NSString *savePath = [self.uniqueSavePath stringByAppendingString:suffix];
     self.fullSavePath=savePath;
     BOOL isImageSaved = [imageData writeToFile:savePath atomically:YES];
+    
     return isImageSaved;
 }
 
@@ -319,13 +324,13 @@ typedef NS_ENUM(NSInteger,uexCamera360CallbackResult) {
 
 #pragma mark - JSON Callback
 
-- (void)callbackJSONWithFunction:(NSString *)functionName object:(id)object{
-    [EUtility uexPlugin:@"uexCamera360"
-         callbackByName:functionName
-             withObject:object
-                andType:uexPluginCallbackWithJsonString
-               inTarget:self.meBrwView];
-}
+//- (void)callbackJSONWithFunction:(NSString *)functionName object:(id)object{
+//    [EUtility uexPlugin:@"uexCamera360"
+//         callbackByName:functionName
+//             withObject:object
+//                andType:uexPluginCallbackWithJsonString
+//               inTarget:self.meBrwView];
+//}
 
 
 

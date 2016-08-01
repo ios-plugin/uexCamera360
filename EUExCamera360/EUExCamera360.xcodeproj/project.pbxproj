@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C29560B1D4B558D00FB17B4 /* pg_edit_sdk_cdb_piratesdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2956071D4B558D00FB17B4 /* pg_edit_sdk_cdb_piratesdk.framework */; };
+		3C29560C1D4B558D00FB17B4 /* pg_edit_sdk_common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2956081D4B558D00FB17B4 /* pg_edit_sdk_common.framework */; };
+		3C29560D1D4B558D00FB17B4 /* PhotoEditFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C29560A1D4B558D00FB17B4 /* PhotoEditFramework.framework */; };
+		3C70F0BD1D4EE68F003815B0 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C70F0BC1D4EE68F003815B0 /* AppCanKit.framework */; };
 		4294AEAF1C3B6E5500A1A82F /* EUExCamera360.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4294AEAE1C3B6E5500A1A82F /* EUExCamera360.mm */; };
-		4294AEB61C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEB21C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework */; };
-		4294AEB71C3B6EA800A1A82F /* pg_edit_sdk_common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEB31C3B6EA800A1A82F /* pg_edit_sdk_common.framework */; };
-		4294AEB81C3B6EA800A1A82F /* PhotoEditFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEB51C3B6EA800A1A82F /* PhotoEditFramework.framework */; };
 		4294AEBB1C3B722C00A1A82F /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEBA1C3B722C00A1A82F /* CoreMotion.framework */; };
 		4294AEBD1C3B723600A1A82F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEBC1C3B723600A1A82F /* CoreData.framework */; };
 		4294AEBF1C3B723F00A1A82F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4294AEBE1C3B723F00A1A82F /* CoreGraphics.framework */; };
@@ -33,13 +34,14 @@
 
 /* Begin PBXFileReference section */
 		37570E9E37255C9F50CDF1F1 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		3C2956071D4B558D00FB17B4 /* pg_edit_sdk_cdb_piratesdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pg_edit_sdk_cdb_piratesdk.framework; sourceTree = "<group>"; };
+		3C2956081D4B558D00FB17B4 /* pg_edit_sdk_common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pg_edit_sdk_common.framework; sourceTree = "<group>"; };
+		3C2956091D4B558D00FB17B4 /* pg_edit_sdk_resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pg_edit_sdk_resource.bundle; sourceTree = "<group>"; };
+		3C29560A1D4B558D00FB17B4 /* PhotoEditFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhotoEditFramework.framework; sourceTree = "<group>"; };
+		3C70F0BC1D4EE68F003815B0 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 		424AD04D1C25285300EEC1F8 /* libuexCamera360.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexCamera360.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4294AEAD1C3B6E5500A1A82F /* EUExCamera360.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExCamera360.h; sourceTree = "<group>"; };
 		4294AEAE1C3B6E5500A1A82F /* EUExCamera360.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EUExCamera360.mm; sourceTree = "<group>"; };
-		4294AEB21C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pg_edit_sdk_cdb_piratesdk.framework; sourceTree = "<group>"; };
-		4294AEB31C3B6EA800A1A82F /* pg_edit_sdk_common.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = pg_edit_sdk_common.framework; sourceTree = "<group>"; };
-		4294AEB41C3B6EA800A1A82F /* pg_edit_sdk_resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = pg_edit_sdk_resource.bundle; sourceTree = "<group>"; };
-		4294AEB51C3B6EA800A1A82F /* PhotoEditFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PhotoEditFramework.framework; sourceTree = "<group>"; };
 		4294AEBA1C3B722C00A1A82F /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		4294AEBC1C3B723600A1A82F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4294AEBE1C3B723F00A1A82F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,14 +68,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C29560C1D4B558D00FB17B4 /* pg_edit_sdk_common.framework in Frameworks */,
+				3C70F0BD1D4EE68F003815B0 /* AppCanKit.framework in Frameworks */,
 				4294AEC31C3B72EF00A1A82F /* AVFoundation.framework in Frameworks */,
 				4294AEC11C3B72E400A1A82F /* CoreMedia.framework in Frameworks */,
+				3C29560B1D4B558D00FB17B4 /* pg_edit_sdk_cdb_piratesdk.framework in Frameworks */,
 				4294AEBF1C3B723F00A1A82F /* CoreGraphics.framework in Frameworks */,
 				4294AEBD1C3B723600A1A82F /* CoreData.framework in Frameworks */,
+				3C29560D1D4B558D00FB17B4 /* PhotoEditFramework.framework in Frameworks */,
 				4294AEBB1C3B722C00A1A82F /* CoreMotion.framework in Frameworks */,
-				4294AEB61C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework in Frameworks */,
-				4294AEB71C3B6EA800A1A82F /* pg_edit_sdk_common.framework in Frameworks */,
-				4294AEB81C3B6EA800A1A82F /* PhotoEditFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +103,6 @@
 		4294AEB11C3B6E9B00A1A82F /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				4294AEB21C3B6EA800A1A82F /* pg_edit_sdk_cdb_piratesdk.framework */,
-				4294AEB31C3B6EA800A1A82F /* pg_edit_sdk_common.framework */,
-				4294AEB41C3B6EA800A1A82F /* pg_edit_sdk_resource.bundle */,
-				4294AEB51C3B6EA800A1A82F /* PhotoEditFramework.framework */,
 			);
 			name = libs;
 			sourceTree = "<group>";
@@ -123,6 +122,7 @@
 		BCE7A544563FAA122103A9CD /* EUExCamera360 */ = {
 			isa = PBXGroup;
 			children = (
+				3C70F0BC1D4EE68F003815B0 /* AppCanKit.framework */,
 				D0E48DD986BD51E8BF9EAB93 /* engineHeader */,
 				FC399D5D8FECA120B3FAD7F0 /* sourceCode */,
 				4294AEAD1C3B6E5500A1A82F /* EUExCamera360.h */,
@@ -161,6 +161,10 @@
 		FC399D5D8FECA120B3FAD7F0 /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				3C2956071D4B558D00FB17B4 /* pg_edit_sdk_cdb_piratesdk.framework */,
+				3C2956081D4B558D00FB17B4 /* pg_edit_sdk_common.framework */,
+				3C2956091D4B558D00FB17B4 /* pg_edit_sdk_resource.bundle */,
+				3C29560A1D4B558D00FB17B4 /* PhotoEditFramework.framework */,
 				4294AEB11C3B6E9B00A1A82F /* libs */,
 				E0681A5657A2CF98B0A6EB60 /* JSON */,
 				4294AED51C3BD2B100A1A82F /* uexCamera360EditViewController.h */,
@@ -320,6 +324,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EUExCamera360/sourceCode",
+					"$(PROJECT_DIR)/EUExCamera360",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";
@@ -335,6 +340,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EUExCamera360/sourceCode",
+					"$(PROJECT_DIR)/EUExCamera360",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_LDFLAGS = "-ObjC";

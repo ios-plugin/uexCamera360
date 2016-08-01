@@ -1,12 +1,12 @@
 /**
  *
- *	@file   	: EUExCamera360.h  in EUExCamera360
+ *	@file   	: ACJSON.h  in AppCanKit
  *
  *	@author 	: CeriNo 
  * 
- *	@date   	: Created on 16/1/5.
+ *	@date   	: Created on 16/5/25.
  *
- *	@copyright 	: 2015 The AppCan Open Source Project.
+ *	@copyright 	: 2016 The AppCan Open Source Project.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser General Public License as published by
@@ -22,7 +22,24 @@
  */
  
 #import <Foundation/Foundation.h>
-#import <AppCanKit/AppCanKit.h>
-@interface EUExCamera360 : EUExBase
 
+@interface NSString (ACJSON)
+
+/**
+ *  尝试将一个JSON字符串反序列化为对象
+ *
+ *  @return 反序列化后的对象,解析失败时返回nil
+ */
+- (id)ac_JSONValue;
+
+@end
+
+
+@interface NSObject (ACJSON)
+
+/**
+ *  尝试将一个对象(NSString,NSDictionary,NSArray)序列化为JSON字符串
+ *  @return 序列化后的JSON字符串,序列化失败时返回nil;
+ */
+- (NSString *)ac_JSONFragment;
 @end

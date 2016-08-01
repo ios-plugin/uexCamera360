@@ -1,12 +1,12 @@
 /**
  *
- *	@file   	: EUExCamera360.h  in EUExCamera360
+ *	@file   	: ACNil.h  in AppCanKit
  *
- *	@author 	: CeriNo 
- * 
- *	@date   	: Created on 16/1/5.
+ *	@author 	: CeriNo
  *
- *	@copyright 	: 2015 The AppCan Open Source Project.
+ *	@date   	: Created on 16/5/25.
+ *
+ *	@copyright 	: 2016 The AppCan Open Source Project.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser General Public License as published by
@@ -20,9 +20,16 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
- 
+
 #import <Foundation/Foundation.h>
-#import <AppCanKit/AppCanKit.h>
-@interface EUExCamera360 : EUExBase
+
+/**
+ *  NSNull的替代品
+ *  不会导致unrecogized selector崩溃
+ */
+@interface ACNil : NSProxy
+
+
++ (instancetype)null;
 
 @end

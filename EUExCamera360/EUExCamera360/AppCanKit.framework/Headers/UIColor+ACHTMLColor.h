@@ -1,12 +1,12 @@
 /**
  *
- *	@file   	: EUExCamera360.h  in EUExCamera360
+ *	@file   	: UIColor+ACHTMLColor.h  in AppCanKit
  *
  *	@author 	: CeriNo 
  * 
- *	@date   	: Created on 16/1/5.
+ *	@date   	: Created on 16/5/31.
  *
- *	@copyright 	: 2015 The AppCan Open Source Project.
+ *	@copyright 	: 2016 The AppCan Open Source Project.
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Lesser General Public License as published by
@@ -22,7 +22,20 @@
  */
  
 #import <Foundation/Foundation.h>
-#import <AppCanKit/AppCanKit.h>
-@interface EUExCamera360 : EUExBase
+#import <UIKit/UIKit.h>
+
+
+
+
+@interface UIColor (ACHTMLColor)
+
+/**
+ *  尝试解析一个HTMLColor字符串,得到UIColor
+ *
+ *  @param htmlColorStr <#htmlColorStr description#>
+ *
+ *  @return 解析得到的UIColor,解析失败时会返回nil
+ */
++ (nullable instancetype)ac_ColorWithHTMLColorString:(nonnull NSString *)htmlColorStr;
 
 @end
