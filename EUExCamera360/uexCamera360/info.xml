@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
-    <plugin uexName="uexCamera360" version="4.0.0" build="2">
-        <info>2: 4.0升级</info>
-        <build>1: IDE证书更新</build>
-        <build>0: uexCamera360 for iOS</build>
+    <plugin uexName="uexCamera360" version="4.0.0" build="0">
+        <info>0: 4.0升级</info>
   </plugin>
 </uexplugins>
